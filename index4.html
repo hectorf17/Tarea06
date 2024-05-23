@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio4</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="imgs/logo.png" alt="logo" height="40">
+        </header>
+        <h1>Tarea N°06</h1>
+        <div id="caso">
+            <img src="imgs/Captura4.PNG" alt=" caso">
+        </div>
+        <div id="solucion">
+            <script>
+
+                //Declaracion de variables
+                var nota1, nota2, nota3, nota4, menor_nota, prom;
+                //Fase de lectura
+                nota1 = parseFloat(prompt("Ingrese la primera nota"));
+                nota2 = parseFloat(prompt("Ingrese la segunda nota"));
+                nota3 = parseFloat(prompt("Ingrese la tercera nota"));
+                nota4 = parseFloat(prompt("Ingrese la cuarta nota"));
+
+                //Fase de procesamiento
+                menor_nota = Math.min(nota1, nota2, nota3, nota4);
+
+                prom = (nota1 + nota2 + nota3 + nota4 - menor_nota) / 3;
+
+                //Fase de salida
+
+                document.write("La nota eliminida es: " + menor_nota + "<br>");
+                document.write("El promedio es: " + prom.toFixed(2));
+
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio1</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="imgs/logo.png" alt="logo" height="40">
+        </header>
+        <h1>Tarea N°06</h1>
+        <div id="caso">
+            <img src="imgs/captura5.png" height="550" alt="caso">
+        </div>
+        <div id="solucion">
+            <script>
+
+                // Declaración de variables
+                var edad, hemoglobina, resul, msj;
+
+                // Fase de lectura
+                edad = parseFloat(prompt("Ingrese la edad (en años):"));
+                hemoglobina = parseFloat(prompt("Ingrese el nivel de hemoglobina (g%):"));
+
+                // Fase de procesamiento
+                if (edad <= 0.08) {
+                    if (hemoglobina < 13 || hemoglobina > 26) {
+                        msj = "Positivo";
+                    } else {
+                        msj = "Negativo";
+                    }
+                } else if (edad <= 0.5) {
+                    if (hemoglobina < 10 || hemoglobina > 18) {
+                        msj = "Positivo";
+                    } else {
+                        msj = "Negativo";
+                    }
+                } else if (edad <= 1) {
+                    if (hemoglobina < 11 || hemoglobina > 15) {
+                        msj = "Positivo";
+                    } else {
+                        msj = "Negativo";
+                    }
+                } else if (edad <= 5) {
+                    if (hemoglobina < 11.5 || hemoglobina > 15) {
+                        msj = "Positivo";
+                    } else {
+                        msj = "Negativo";
+                    }
+                } else if (edad <= 10) {
+                    if (hemoglobina < 12.6 || hemoglobina > 15.5) {
+                        msj = "Positivo";
+                    } else {
+                        msj = "Negativo";
+                    }
+                } else if (edad <= 15) {
+                    if (hemoglobina < 13 || hemoglobina > 15.5) {
+                        msj = "Positivo";
+                    } else {
+                        msj = "Negativo";
+                    }
+                } else {
+                    msj = "Negativo";
+                }
+                // Fase de salida
+
+                document.write("Edad del paciente: " + edad + "<br>");
+                document.write("Nivel de hemoglobina(g%): " + hemoglobina + "<br>");
+                document.write("Resultado: " + msj);
+
+
+
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>

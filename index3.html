@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio3</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="imgs/logo.png" alt="logo" height="40">
+        </header>
+        <h1>Tarea N°06</h1>
+        <div id="caso">
+            <img src="imgs/captura3.PNG" alt="caso">
+        </div>
+        <div id="solucion">
+            <script>
+
+                //Declaracion de variables
+                var num_kg,dsct,mont_total, precio_manz;
+
+                //Fase de lectura
+                num_kg=parseFloat(prompt("Ingrese el numero de numero de kilos comprados"));
+                precio_manz=parseFloat(prompt("Ingrese el precio de la manzanas"));
+                //Fase de procesamiento
+                if (num_kg>=0 && num_kg<=2) {
+                    dsct=0;
+                } else if (num_kg>2 && num_kg<=5){
+                    dsct=0.10;
+                }else if (num_kg>5 && num_kg<=10){
+                    dsct=0.15;
+                }else{
+                    dsct=0.20;
+                }
+                
+                var dscto_aplicado=1-dsct
+
+                mont_total=precio_manz*num_kg*dscto_aplicado;
+                
+                //Fase de salida
+                document.write("El monto total a pagar es: " + mont_total.toFixed(2));
+
+
+
+
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>

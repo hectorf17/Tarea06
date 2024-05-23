@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="imgs/logo.png" alt="logo" height="40">
+        </header>
+        <h1>Tarea N°06</h1>
+        <div id="caso">
+            <img src="imgs/Captura2.PNG" alt="caso">
+        </div>
+        <div id="solucion">
+            <script>
+
+                //Declaracion de variables
+                var tornillos_def, tornillos_prod, grado_efi;
+
+                //Fase de lectura
+                tornillos_def = parseInt(prompt("Ingrese la cantidad de tornillos deficientes"));
+                tornillos_prod = parseInt(prompt("Ingrese la cantidad de tornillos producidos"));
+
+                //Fase de procesamiento
+                if (tornillos_def<200 && tornillos_prod>10000) {
+                    grado_efi=8;
+                } else if (tornillos_prod>10000){
+                    grado_efi=7;
+                }if (tornillos_def<200) {
+                    grado_efi=6;
+                } else {
+                    grado_efi=5;
+                }
+
+
+                //Fase de salida
+                document.write("El grado de eficiencia del operario es: "+ grado_efi);
+
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>

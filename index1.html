@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio1</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="imgs/logo.png" alt="logo" height="40">
+        </header>
+        <h1>Tarea N°06</h1>
+        <div id="caso">
+            <img src="imgs/captura1.PNG" alt="caso">
+        </div>
+        <div id="solucion">
+            <script>
+
+                //Declaracion de variables
+                var num_llantas, mont_total, precio_llanta;
+
+                //Fase de lectura
+                num_llantas = parseInt(prompt("Ingrese el numero de llantas que va a comprar"));
+
+                //Fase de procesamiento
+
+                if (num_llantas < 5) {
+                    precio_llanta = 30000;
+                } else if (num_llantas >= 5 && num_llantas <= 10) {
+                    precio_llanta = 25000;
+                } else {
+                    precio_llanta = 20000;
+                }
+
+                mont_total = num_llantas * precio_llanta;
+
+                //Fase de salida
+                document.write("Precio por la llanta: $" + precio_llanta + "<br>");
+                document.write("Monto total a pagar: $" + mont_total);
+            </script>
+        </div>
+    </main>
+</body>
+
+</html>
